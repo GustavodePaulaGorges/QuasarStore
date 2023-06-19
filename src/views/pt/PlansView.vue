@@ -30,7 +30,7 @@ import { RouterLink } from 'vue-router';
                         BASIC
                     </div>
                     <div class="h-full flex items-end">
-                        <img  src="../components/imgs/Daco_5628946.png" />
+                        <img  src="src/components/imgs/Daco_5628946.png" />
                     </div>
                 </RouterLink>
 
@@ -40,7 +40,7 @@ import { RouterLink } from 'vue-router';
                         PRO
                     </div>
                     <div class="h-full flex items-end">
-                        <img src="../components/imgs/Daco_1297818.png" />
+                        <img src="src/components/imgs/Daco_1297818.png" />
                     </div>
                 </RouterLink>
 
@@ -50,7 +50,7 @@ import { RouterLink } from 'vue-router';
                         ULTRA
                     </div>
                     <div class="h-full flex items-end">
-                        <img  src="../components/imgs/omichael.png" />
+                        <img  src="src/components/imgs/omichael.png" />
                     </div>
                 </RouterLink>
 
@@ -60,13 +60,13 @@ import { RouterLink } from 'vue-router';
                         GOD
                     </div>
                     <div class="h-full flex items-end">
-                        <img  src="../components/imgs/godMode.png" />
+                        <img  src="src/components/imgs/godMode.png" />
                     </div>
                 </RouterLink>
             </div>
             <div>
                 <RouterLink to="/" class="w-full flex justify-center mt-10">
-                    <img class="w-12 animate-pulse" src="../components/icons/arrowBack.svg" />    
+                    <img class="w-12 animate-pulse" src="src/components/icons/arrowBack.svg" />    
                 </RouterLink>
             </div>
         </div>

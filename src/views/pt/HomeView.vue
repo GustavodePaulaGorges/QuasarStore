@@ -16,9 +16,16 @@
             <p class="font-sansation text-2xl font-medium text-slate-50">
                 - QUASAR STORE -
             </p>
-            <a href="https://discord.com/invite/jJ4wvQCCsc" target="_blank" class="">
-                <img src="../components/icons/discord-icon-svgrepo-com.svg" class="h-8" />
-            </a>
+            <div class="flex items-center">
+                <a href="https://discord.com/invite/jJ4wvQCCsc" target="_blank" class="mx-4">
+                    <img src="/src/components/icons/discord-icon-svgrepo-com.svg" class="h-8" />
+                </a>
+                <RouterLink to="/en">
+                    <img src="@/components/icons/usa.svg" class="h-10" />
+                </RouterLink>
+            </div>
+            
+
         </div>
         <div class="z-50 relative w-screen text-white flex justify-center">
         
@@ -66,7 +73,8 @@
 
             <!-- indicator -->
             <RouterLink to="/plans" class="w-full flex justify-center mt-10">
-                <img class="w-12 animate-pulse" src="../components/icons/arrowSide.svg" />    
+                <img class="w-12 animate-pulse" src="src\components\icons\arrowSide.svg" />
+
             </RouterLink>
             </div>
         </div>

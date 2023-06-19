@@ -1,10 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import PlansView from '../views/PlansView.vue'
-import BasicPlan from '../views/BasicPlan.vue'
-import ProPlan from '../views/ProPlan.vue'
-import UltraPlan from '../views/UltraPlan.vue'
-import GodPlan from '../views/GodPlan.vue'
+import PTHomeView from '../views/pt/HomeView.vue'
+import PTPlansView from '../views/pt/PlansView.vue'
+import PTBasicPlan from '../views/pt/BasicPlan.vue'
+import PTProPlan from '../views/pt/ProPlan.vue'
+import PTUltraPlan from '../views/pt/UltraPlan.vue'
+import PTGodPlan from '../views/pt/GodPlan.vue'
+
+import ENPlansView from '../views/eng/PlansView.vue'
+import ENHomeView from '../views/eng/HomeView.vue'
+import ENBasicPlan from '../views/eng/BasicPlan.vue'
+import ENProPlan from '../views/eng/ProPlan.vue'
+import ENUltraPlan from '../views/eng/UltraPlan.vue'
+import ENGodPlan from '../views/eng/GodPlan.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,33 +19,63 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: PTHomeView
     },
     {
       path: '/plans',
       name: 'plans',
-      component: PlansView
+      component: PTPlansView
     },
     {
       path: '/basic',
       name: 'basic',
-      component: BasicPlan
+      component: PTBasicPlan
     },
     {
       path: '/pro',
       name: 'pro',
-      component: ProPlan
+      component: PTProPlan
     },
     {
       path: '/ultra',
       name: 'ultra',
-      component: UltraPlan
+      component: PTUltraPlan
     },
     {
       path: '/god',
       name: 'god',
-      component: GodPlan
+      component: PTGodPlan
     },
+    {
+      path: '/en/basic',
+      name: 'en-basic',
+      component: ENBasicPlan
+    },
+    {
+      path: '/en/god',
+      name: 'en-god',
+      component: ENGodPlan
+    },
+    {
+      path: '/en',
+      name: 'en-home',
+      component: ENHomeView
+    },
+    {
+      path: '/en/plans',
+      name: 'en-plans',
+      component: ENPlansView
+    },
+    {
+      path: '/en/pro',
+      name: 'en-pro',
+      component: ENProPlan
+    },
+    {
+      path: '/en/ultra',
+      name: 'en-ultra',
+      component: ENUltraPlan
+    }
   ]
 })
 
